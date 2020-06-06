@@ -25,11 +25,14 @@ jobs:
       with: 
         version: 12
         
-    - name: GitHub Action for npm
-      uses: Borales/actions-npm@v2.1.0
-      with:
-        # npm command
-        cmd: install 
+    # - name: GitHub Action for npm
+    #   uses: Borales/actions-npm@v2.1.0
+    #   with:
+    #     # npm command
+    #     cmd: install 
+    
+    - name: install react modules
+      run: npm install
     
     - name: Creating build
       run: npm build
