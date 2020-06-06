@@ -24,20 +24,14 @@ jobs:
       uses: actions/setup-node@v2-beta
       with: 
         version: 12
-        
-    # - name: GitHub Action for npm
-    #   uses: Borales/actions-npm@v2.1.0
-    #   with:
-    #     # npm command
-    #     cmd: install 
     
-    - name: install react modules
+    - name: Installing react modules
       run: npm install
     
-    - name: Creating build
-      run: npm build
+    - name: Creating React Build
+      run: npm run build
     
-    - name: installing surge  
+    - name: Installing surge  
       run: npm install -g surge
     
     - name: deploying on surge
