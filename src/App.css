@@ -9,7 +9,6 @@
 
 
 .App-header {
-  /* background-color: #282c34; */
   background-color: #01645f;
   min-height: 100vh;
   display: flex;
@@ -24,4 +23,13 @@
 .kashif-title{
   font-weight: bold;
   font-size: 5vmin;
+}
+
+
+.kashif-bold{
+  font-weight: bold;
+  font-size: 4vmin;
+}
+.kashif-bold:hover{
+  text-shadow: 2px 2px black;
 }
